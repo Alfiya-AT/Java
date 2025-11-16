@@ -3,8 +3,8 @@ public class j {
    public j() {
    }
 
-   public static void main(String[] var0) {
-      byte var1 = 1;
-      System.out.println(var1);
+   public static void main(String[] args) {
+      String name = "Alfiya";
+      System.out.println(name);
    }
 }

@@ -5,39 +5,43 @@ import java.util.List;
 
 public class ArrayListDemo {
 
-   public static void main(String[] args) {
-      // Static Binding
-      System.out.println("Static Binding");
-      ArrayList l = new ArrayList();
-      l.add(60);
-      l.add(22.22f);
-      l.add("Alfiya A T");
-      System.out.println(l);
-      l.remove(1);
-      System.out.println(l);
-      l.add(1, 80);
-      l.add(500);
-      l.add(500);
-      System.out.println(l);
-      System.out.println("\n");
-      System.out.println("Dynamic Binding");
-      // Dynamic Binding
-      List list = new ArrayList();
-      list.add(10);
-      list.add(20);
-      list.addAll(l);
-      System.out.println(list);
-      Iterator i = list.iterator();
-      while (i.hasNext()) {
-         System.out.println(i.next());
-      }
-      System.out.println("\n");
-      System.out.println("Generics in ArrayList");
-      // By using Generics
-      List<Integer> l1 = new ArrayList<Integer>();
-      l1.add(10);
-      l1.add(100);
-      System.out.println(l1);
-   }
+/*************  ✨ Windsurf Command 🌟  *************/
+    public static void main(String[] args) {
+        // Static Binding
+
+        ArrayList al = new ArrayList();
+        al.add(10);
+        // al.add(new School());
+        al.add(22.22f);
+        al.add("Gayatri");
+        System.out.println(al);
+        al.remove(1);
+        System.out.println(al);
+        al.add(1, 100);
+        al.add(100);
+        al.add(100);
+        al.add(100);
+        al.add(100);
+        al.add(100);
+        al.add(100);
+        al.add(100);
+        System.out.println(al);
+
+        // Dynamic Binding
+        List l = new ArrayList();
+        l.addAll(al);
+        System.out.println(l);
+        Iterator i = l.iterator();
+        while (i.hasNext()) {
+            System.out.println(i.next());
+        }
+
+        // By using Generics
+        List<Integer> l1 = new ArrayList<Integer>();
+        l1.add(10);
+        l1.add(100);
+
+    }
+/*******  a117dbea-89a4-47c2-aa5e-344fed8253ad  *******/
 
 }
